@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <script src="./index.js" defer></script>
+    <h1>Bienvenidos</h1>
+    <h3>para poder ingresar es necesario que llenes los siguientes datos</h3>
+    <p id="respuesta"></p>
+    <form action="" id="form">
+      <label for="username"
+        >Escribe tu usuario
+        <input
+          required
+          type="text"
+          id="username"
+          placeholder="escribe tu usuario"
+        />
+      </label>
+      <label for="password"
+        >Escribe tu password
+        <input
+          required
+          type="password"
+          id="password"
+          placeholder="escribe tu password"
+        />
+      </label>
+      <label for="validation">
+        ¿aceptas los terminos y condiciones?
+        <input required type="checkbox" id="validation" />
+      </label>
+      <button type="submit">ingresar</button>
+    </form>
+  </body>
+</html>

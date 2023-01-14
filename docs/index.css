@@ -28,9 +28,13 @@ form {
   justify-content: space-around;
   font-weight: 800;
   font-size: large;
+  text-align: center;
+  padding: 20px
+
 }
 
 form input {
+  width: 100%;
   font-size: large;
   border-color: #7a7a7a;
   background-color: #f5f5f5;

@@ -6,13 +6,13 @@ form.addEventListener("submit", (e) => {
   let usuario = document.getElementById("username").value;
   let password = document.getElementById("password").value;
 
-  if (usuario !== "Nicolas Olmos") {
+  if (usuario !== "bit") {
     (document.getElementById(
       "respuesta"
     ).innerHTML = `hay algun dato mal, por favor verifica`),
       console.error("error en el nombre");
   }
-  if (password !== "Password123") {
+  if (password !== "2023") {
     (document.getElementById(
       "respuesta"
     ).innerHTML = `hay algun dato mal, por favor verifica`),

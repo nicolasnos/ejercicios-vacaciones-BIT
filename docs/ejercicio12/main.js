@@ -1,24 +1,24 @@
-// Pedir un número, mostrar si es positivo, negativo o si es cero.
+// Pedir un número, mostrar si es par, impar o si es cero.
 
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let numero = document.getElementById("numero").value;
-
-  if (Math.sign(numero) === 1) {
-    document.getElementById(
+  let numero = Number(document.getElementById("numero").value);
+  if (numero === 0) {
+    (document.getElementById(
       "respuesta"
-    ).innerHTML = `el valor de ${numero} es positivo`;
+    ).innerHTML = `el numero es ${numero}, valor neutro`),
+      console.log(`neutro`);
   }
-  if (Math.sign(numero) === -1) {
+  if (numero % 2 === 0) {
     document.getElementById(
       "respuesta"
-    ).innerHTML = `el valor de ${numero} es negativo`;
+    ).innerHTML = `el numero ${numero} es par`;
   }
-  if (Math.sign(numero) === 0) {
+  if (numero % 2 !== 0) {
     document.getElementById(
       "respuesta"
-    ).innerHTML = `el valor de ${numero} es 0`;
+    ).innerHTML = `el numero ${numero} es impar`;
   }
 });

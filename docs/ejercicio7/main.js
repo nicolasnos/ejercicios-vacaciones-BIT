@@ -1,12 +1,12 @@
-// Pedir un número, mostrar la mitad de n.
+// Pedir un número, mostrar la tercera parte de n.
 
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let numero = document.getElementById("numero").value;
-  let division = numero / 2;
+  let division = (numero / 3).toFixed(2);
   document.getElementById(
     "respuesta"
-  ).innerHTML = `la mitad de ${numero} es ${division}`;
+  ).innerHTML = `la tercera parte de ${numero} es ${division}`;
 });

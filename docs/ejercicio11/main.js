@@ -1,12 +1,24 @@
-// Pedir un número, mostrar el doble de n más 4.
+// Pedir un número, mostrar si es positivo, negativo o si es cero.
 
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let numero = document.getElementById("numero").value;
-  let operacion = numero * 2 + 4;
-  document.getElementById(
-    "respuesta"
-  ).innerHTML = `la operacion de ${numero} al doble y sumarle 4 da como resultado ${operacion}`;
+
+  if (Math.sign(numero) === 1) {
+    document.getElementById(
+      "respuesta"
+    ).innerHTML = `el valor de ${numero} es positivo`;
+  }
+  if (Math.sign(numero) === -1) {
+    document.getElementById(
+      "respuesta"
+    ).innerHTML = `el valor de ${numero} es negativo`;
+  }
+  if (Math.sign(numero) === 0) {
+    document.getElementById(
+      "respuesta"
+    ).innerHTML = `el valor de ${numero} es 0`;
+  }
 });

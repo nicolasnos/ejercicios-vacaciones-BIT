@@ -21,3 +21,10 @@ form.addEventListener("submit", (e) => {
     window.location.assign("./ejercicio1/index.html");
   }
 });
+
+const array = [1, 2, 3, 4];
+
+let ebject = {};
+
+const funcion = () => {};
+console.info(ebject.isDifferent);

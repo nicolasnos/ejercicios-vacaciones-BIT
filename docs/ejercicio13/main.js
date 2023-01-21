@@ -1,24 +1,34 @@
-// Pedir un número, mostrar si es par, impar o si es cero.
+// Pedir un número, mostrar si es un número primo o no.
 
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let numero = Number(document.getElementById("numero").value);
-  if (numero === 0) {
-    (document.getElementById(
+  if (typeof numero !== "number")
+    return console.info(`el dato ${numero} no es un numero`);
+
+  if (numero === 0)
+    return (document.getElementById(
       "respuesta"
-    ).innerHTML = `el numero es ${numero}, valor neutro`),
-      console.log(`neutro`);
-  }
-  if (numero % 2 === 0) {
-    document.getElementById(
+    ).innerHTML = `el numero ${numero} es invalido`);
+  if (numero === 1)
+    return (document.getElementById(
       "respuesta"
-    ).innerHTML = `el numero ${numero} es par`;
+    ).innerHTML = `el numero ${numero} es invalido`);
+
+  let divisible = false;
+  for (let index = 2; index < numero; index++) {
+    if (numero % index === 0) {
+      divisible = true;
+      break;
+    }
   }
-  if (numero % 2 !== 0) {
-    document.getElementById(
-      "respuesta"
-    ).innerHTML = `el numero ${numero} es impar`;
-  }
+  return divisible
+    ? (document.getElementById(
+        "respuesta"
+      ).innerHTML = `el numero ${numero} no es primo`)
+    : (document.getElementById(
+        "respuesta"
+      ).innerHTML = `el numero ${numero} es primo`);
 });

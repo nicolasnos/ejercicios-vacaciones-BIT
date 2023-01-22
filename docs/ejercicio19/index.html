@@ -4,29 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Ejercicio 19</title>
   </head>
-  <body>
+  <body class="p-3 mb-2 bg-success-subtle text-emphasis-success">
     <script src="./main.js" defer></script>
     <h1 id="titulo">Hola</h1>
     <form action="" id="form">
       <label for="numero">
-        mostrar si el primer número es divisible por el segundo.
+        escribe un numero en cada caja de texto para mostrarte el resultado
         <input
           id="numero1"
           type="number"
           placeholder="escribe un numero"
           required
+          aria-label="First name"
+          class="form-control"
         />
         <input
           id="numero2"
           type="number"
           placeholder="escribe un numero"
           required
+          aria-label="First name"
+          class="form-control mt-2 mb-2"
         />
       </label>
-      <button type="submit" id="enviar">enviar</button>
-      <h2 id="respuesta"></h2>
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        id="option"
+      >
+        <option selected>Abre para elegir la operacion</option>
+        <option value="suma">suma</option>
+        <option value="resta">resta</option>
+        <option value="multiplicacion">multiplicacion</option>
+        <option value="division">division</option>
+      </select>
+      <button type="submit" id="enviar" class="btn btn-primary mt-2">
+        enviar
+      </button>
+      <h2 id="respuesta" class="display-4"></h2>
     </form>
+    <a href="../ejercicio20/index.html">Ejercicio 20</a>
   </body>
 </html>

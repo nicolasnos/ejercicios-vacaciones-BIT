@@ -12,34 +12,24 @@
     />
     <title>Ejercicio 20</title>
   </head>
-  <body>
+  <body class="p-3 mb-2 bg-success-subtle text-emphasis-success">
     <script src="./main.js" defer></script>
     <h1 id="titulo">Hola</h1>
     <form action="" id="form">
-      <input type="text" aria-label="First name" class="form-control" />
       <label for="numero">
-        escribe un numero en cada caja de texto para mostrarte el resultado
+        escribe un numero para mostrarte una suma
         <input
-          id="numero1"
+          id="numero"
           type="number"
           placeholder="escribe un numero"
           required
-        />
-        <input
-          id="numero2"
-          type="number"
-          placeholder="escribe un numero"
-          required
+          aria-label="First name"
+          class="form-control"
         />
       </label>
-      <select name="option" id="option">
-        <option value="sumar">sumar</option>
-        <option value="restar">restar</option>
-        <option value="dividir">dividir</option>
-        <option value="multiplicar">multiplicar</option>
-      </select>
-      <button type="submit">enviar</button>
-      <h2 id="respuesta"></h2>
+      <button type="submit" id="enviar" class="btn btn-primary">enviar</button>
+      <h2 id="respuesta" class="display-4"></h2>
     </form>
+    <a href="../ejercicio21/index.html">ejercicio 21</a>
   </body>
 </html>

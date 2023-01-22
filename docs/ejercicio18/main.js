@@ -1,15 +1,14 @@
-// Pedir dos números, mostrar la suma.
+// Pedir dos números, mostrar el resto de la división.
+"use-strict";
 
-const form = document.querySelector("#form");
+let form = document.getElementById("form");
+let respuesta = document.getElementById("respuesta");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let primero = Number(document.getElementById("numero1").value);
-  let segundo = Number(document.getElementById("numero2").value);
-
-  let suma = primero + segundo;
-  console.log(suma);
-  document.getElementById(
-    "respuesta"
-  ).innerHTML = `la operacion entre ${primero} y ${segundo} da como resultado ${suma}`;
+  if (Number(form.numero1.value) % Number(form.numero2.value) == 0) {
+    respuesta.innerHTML = "si es divisible";
+  } else {
+    respuesta.innerHTML = "no es divisible";
+  }
 });

@@ -11,5 +11,5 @@ form.addEventListener("submit", (e) => {
   console.log(multiplicacion);
   document.getElementById(
     "respuesta"
-  ).innerHTML = `la resta entre ${primero} y ${segundo} da como resultado ${multiplicacion}`;
+  ).innerHTML = `la division entre ${primero} y ${segundo} da como resultado ${multiplicacion}`;
 });

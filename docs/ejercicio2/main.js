@@ -1,3 +1,4 @@
+// Pedir edad al usuario y responder si es o no es mayor de edad.
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {

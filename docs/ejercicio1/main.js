@@ -1,3 +1,4 @@
+// Pedir nombre al usuario y saludarlo.
 const form = document.querySelector("#form");
 const titulo = document.getElementById("titulo");
 

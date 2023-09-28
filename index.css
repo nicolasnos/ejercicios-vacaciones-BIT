@@ -13,6 +13,29 @@ form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
+}
+
+#form label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form input {
+  outline: none;
+  border-color: transparent;
+  border-radius: 10px;
+  text-align: center;
+}
+
+form button {
+  background-color: goldenrod;
+  margin: auto;
+  border-color: transparent;
+  border-radius: 10px;
+  width: 200px;
+  height: 2rem;
 }
 
 form:hover {

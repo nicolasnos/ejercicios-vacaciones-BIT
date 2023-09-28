@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="index.css" />
     <title>Login</title>
   </head>
-  <body>
+  <body class="login">
     <script src="./index.js" defer></script>
     <h1>Bienvenidos</h1>
     <h3>para poder ingresar es necesario que llenes los siguientes datos</h3>
     <p id="respuesta"></p>
-    <form action="" id="form">
+    <form id="form">
       <label for="username"
         >Escribe tu usuario
         <input
@@ -36,6 +36,10 @@
         <input required type="checkbox" id="validation" />
       </label>
       <button type="submit">ingresar</button>
+      <div class="credentials">
+        <p>usuario: Nicolas</p>
+        <p>password: Password123</p>
+      </div>
     </form>
   </body>
 </html>

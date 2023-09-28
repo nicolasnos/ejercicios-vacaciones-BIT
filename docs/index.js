@@ -6,25 +6,18 @@ form.addEventListener("submit", (e) => {
   let usuario = document.getElementById("username").value;
   let password = document.getElementById("password").value;
 
-  if (usuario !== "bit") {
+  if (usuario !== "Nicolas") {
     (document.getElementById(
       "respuesta"
     ).innerHTML = `hay algun dato mal, por favor verifica`),
-      console.error("error en el nombre");
+      alert("error en el nombre");
   }
-  if (password !== "2023") {
+  if (password !== "Password123") {
     (document.getElementById(
       "respuesta"
     ).innerHTML = `hay algun dato mal, por favor verifica`),
-      console.error("error en el password");
+      alert("error en el password");
   } else {
     window.location.assign("./ejercicio1/index.html");
   }
 });
-
-const array = [1, 2, 3, 4];
-
-let ebject = {};
-
-const funcion = () => {};
-console.info(ebject.isDifferent);
